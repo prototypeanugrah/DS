@@ -1,0 +1,8 @@
+2024-12-10 01:18:51,525 - INFO - Starting parent-child relationship analysis
+2024-12-10 01:20:27,018 - INFO - Parent-Child Analysis Results:
+2024-12-10 01:20:27,018 - INFO - Found 2558 cycles
+2024-12-10 01:20:27,018 - INFO - Analysis took 6.34 seconds
+2024-12-10 01:20:27,018 - INFO - Starting broader-than relationship analysis
+2024-12-10 01:22:54,185 - INFO - Broader-Than Analysis Results:
+2024-12-10 01:22:54,186 - INFO - Found 5070 violations
+2024-12-10 01:22:54,186 - INFO - Analysis took 61.84 seconds

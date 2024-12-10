@@ -1,0 +1,7 @@
+Metric,Value
+Total_Parent_Child_Relationships,3206211
+Number_of_Parent_Child_Cycles,2558
+Total_Concepts,2383783
+Number_of_Self_Loops,687421
+Number_of_Duplicate_Relationships,4485616
+Cycle_Detection_Time_Seconds,6.34

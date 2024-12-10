@@ -1,0 +1,7 @@
+Metric,Value
+Total_Broader_Than_Relationships,1493456
+Number_of_Broader_Than_Violations,5070
+Total_Concepts,1160774
+Number_of_Self_Loops,687421
+Number_of_Duplicate_Relationships,4485616
+Violation_Detection_Time_Seconds,61.84
