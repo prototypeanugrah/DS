@@ -113,17 +113,18 @@ Supported relationship types:
 ## Output
 
 Results are saved in the following directory structure:
+
 res/
 ├── parent_child/
-│ ├── parent_child_cycles_[timestamp].csv
-│ ├── duplicate_relationships_[timestamp].csv
-│ ├── self_loops_[timestamp].csv
-│ └── analysis_stats_[timestamp].csv
+│   ├── parent_child_cycles_[timestamp].csv
+│   ├── duplicate_relationships_[timestamp].csv
+│   ├── self_loops_[timestamp].csv
+│   └── analysis_stats_[timestamp].csv
 └── broader_than/
-├── broader_than_violations_[timestamp].csv
-├── duplicate_relationships_[timestamp].csv
-├── self_loops_[timestamp].csv
-└── analysis_stats_[timestamp].csv
+    ├── broader_than_violations_[timestamp].csv
+    ├── duplicate_relationships_[timestamp].csv
+    ├── self_loops_[timestamp].csv
+    └── analysis_stats_[timestamp].csv
 
 
 ### Output Files
@@ -157,6 +158,7 @@ A parent-child cycle occurs when following parent-child relationships leads back
 
 Example cycle:
     ```Cycle_ID,Cycle
+
     1,C0205076 -> C0441655 -> C0205084 -> C0205076
     ```
 
@@ -173,6 +175,7 @@ A broader-than violation occurs when two concepts are defined as being broader t
 Example violation:
     ```
     Violation_ID,Source,Target,Circular_Path
+
     1,C0003962,C0003963,C0003962 -> C0004096 -> C0003963 -> C0003962
     ```
 
