@@ -113,17 +113,20 @@ Supported relationship types:
 ## Output
 
 Results are saved in the following directory structure:
+
+```
 res/
 ├── parent_child/
-│ ├── parent_child_cycles_[timestamp].csv
-│ ├── duplicate_relationships_[timestamp].csv
-│ ├── self_loops_[timestamp].csv
-│ └── analysis_stats_[timestamp].csv
+│   ├── parent_child_cycles_[timestamp].csv
+│   ├── duplicate_relationships_[timestamp].csv
+│   ├── self_loops_[timestamp].csv
+│   └── analysis_stats_[timestamp].csv
 └── broader_than/
-├── broader_than_violations_[timestamp].csv
-├── duplicate_relationships_[timestamp].csv
-├── self_loops_[timestamp].csv
-└── analysis_stats_[timestamp].csv
+    ├── broader_than_violations_[timestamp].csv
+    ├── duplicate_relationships_[timestamp].csv
+    ├── self_loops_[timestamp].csv
+    └── analysis_stats_[timestamp].csv
+```
 
 
 ### Output Files
@@ -156,9 +159,10 @@ res/
 A parent-child cycle occurs when following parent-child relationships leads back to the original concept. 
 
 Example cycle:
-    ```Cycle_ID,Cycle
-    1,C0205076 -> C0441655 -> C0205084 -> C0205076
-    ```
+
+| Cycle_ID | Path |
+|----------|------|
+| Cycle 1  | C0205076 → C0441655 → C0205084 → C0205076 |
 
 **What this means:**
 - Concept C0205076 (Entire upper arm) is a parent of C0441655 (Structure of upper arm)
@@ -171,10 +175,10 @@ This creates an invalid circular hierarchy where a concept ends up being its own
 A broader-than violation occurs when two concepts are defined as being broader than each other, either directly or through a chain of relationships.
 
 Example violation:
-    ```
-    Violation_ID,Source,Target,Circular_Path
-    1,C0003962,C0003963,C0003962 -> C0004096 -> C0003963 -> C0003962
-    ```
+
+| Violation_ID | Source | Target | Circular_Path |
+|--------------|--------|--------|---------------|
+| 1 | C0003962 | C0003963 | C0003962 → C0004096 → C0003963 → C0003962 |
 
 **What this means:**
 - C0003962 (Aspirin) is marked as broader than C0004096 (Salicylates)
